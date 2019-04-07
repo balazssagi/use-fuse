@@ -1,0 +1,16 @@
+{
+  "name": "use-fuse-example",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "parcel ./index.html --open"
+  },
+  "dependencies": {
+    "react": "16.8.6",
+    "react-dom": "16.8.6",
+    "use-fuse": "0.0.1"
+  },
+  "devDependencies": {
+    "@babel/core": "7.2.0",
+    "parcel-bundler": "^1.6.1"
+  }
+}

@@ -1,0 +1,41 @@
+{
+    "name": "use-fuse",
+    "version": "0.0.1",
+    "description": "A tiny wrapper around the Fuse.js fuzzy-search library using React Hooks.",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "license": "MIT",
+    "files": ["dist/"],
+    "author": {
+        "name": "Balázs Sági",
+        "email": "balazssagi@outlook.com"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/balazssagi/use-fuse"
+    },
+    "scripts": {
+        "build": "microbundle ./src/index.ts --format cjs",
+        "watch": "microbundle watch ./src/index.ts --format cjs",
+        "test": "jest",
+        "prepublishOnly": "yarn build && yarn test"
+    },
+    "peerDependencies": {
+        "react": "^16.8.0"
+    },
+    "dependencies": {
+        "@types/react": "^16.8.12",
+        "fuse.js": "^3.4.4"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.4.3",
+        "@babel/preset-env": "^7.4.3",
+        "@babel/preset-react": "^7.0.0",
+        "jest": "^24.7.1",
+        "microbundle": "^0.11.0",
+        "react": "^16.8.0",
+        "react-dom": "^16.8.0",
+        "react-hooks-testing-library": "^0.4.0",
+        "typescript": "^3.4.1"
+    }
+}
