@@ -17,9 +17,8 @@ function useFuse<T>(
     searchTerm: string,
     fuseOptions?: Fuse.FuseOptions<T>
 ) {
-    const [fuse, setFuse] = React.useState(new Fuse(list, fuseOptions))
-    React.useEffect(() => {
-        setFuse(new Fuse(list, fuseOptions))
+    const fuse = React.useMemo(() => {
+        return new Fuse(list, fuseOptions)
     }, [list, fuseOptions])
 
     const results = React.useMemo(() => {
