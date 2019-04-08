@@ -22,10 +22,10 @@ function useFuse<T>(
         setFuse(new Fuse(list, fuseOptions))
     }, [list, fuseOptions])
 
-    const [results, setResults] = React.useState(fuse.search(searchTerm))
-    React.useEffect(() => {
-        setResults(fuse.search(searchTerm))
+    const results = React.useMemo(() => {
+        return fuse.search(searchTerm)
     }, [fuse, searchTerm])
+
     return results
 }
 
