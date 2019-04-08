@@ -28,6 +28,4 @@ function useFuse<T>(
     return results
 }
 
-useFuse
-
 export default useFuse
