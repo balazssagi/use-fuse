@@ -5108,10 +5108,10 @@ url@^0.11.0:
     punycode "1.3.2"
     querystring "0.2.0"
 
-use-fuse@0.0.1:
-  version "0.0.1"
-  resolved "https://registry.yarnpkg.com/use-fuse/-/use-fuse-0.0.1.tgz#f244ac80f7539b6bf14a8e1e1e598d9791395581"
-  integrity sha512-bHNPpBVZcA7l+0A91Z96uGQmeGgM79RjiwjOBCa0Iuev5hY8vkAT4GbTF0uLqHQsvfWSm1zjQKTqZIyCCCLgcg==
+use-fuse@0.0.2:
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/use-fuse/-/use-fuse-0.0.2.tgz#015a11052ba7eb0dda16a79adab8033604b07c75"
+  integrity sha512-1WGmWOfHfPUgseQfpxjfq8DFMEeCLoPsZMS4AXYpUERjzu8gpCBKi5yD3ztXOqrPHLBSMOE7ECVs3vwqEF5XcQ==
   dependencies:
     "@types/react" "^16.8.12"
     fuse.js "^3.4.4"
